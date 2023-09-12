@@ -41,6 +41,7 @@
       <option value="efectivo" >efectivo</option>
     </select><br>
     <button type="submit">Agregar</button>
+    <button onclick="window.location.href='index.php'">Volver</button>
   </form>
 
 </body>
