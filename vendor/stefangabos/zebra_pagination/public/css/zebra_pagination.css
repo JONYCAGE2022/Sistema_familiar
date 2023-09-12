@@ -1,0 +1,133 @@
+.Zebra_Pagination {
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 500px;
+}
+
+.Zebra_Pagination ol {
+    position: relative;
+    left: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left
+}
+
+.Zebra_Pagination li {
+    position: relative;
+    float: left;
+    right: 50%
+}
+
+.Zebra_Pagination .pagination {
+    display: inline-block;
+}
+
+.Zebra_Pagination li {
+    display: inline;
+}
+
+.Zebra_Pagination a,
+.Zebra_Pagination span {
+    padding: 6px 12px;
+    color: #337AB7;
+    text-decoration: none;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    display: block;
+    float: left;
+    position: relative;
+    margin-left: -1px;
+}
+
+.Zebra_Pagination li.active a {
+    color: #FFF;
+    cursor: default;
+    background-color: #337AB7;
+    border-color: #337AB7;
+}
+
+.Zebra_Pagination li a:hover,
+.Zebra_Pagination li span:hover {
+    color: #23527C;
+    background-color: #EEE;
+    border-color: #DDD;
+}
+
+.Zebra_Pagination li.disabled a {
+    color: #DEDEDE;
+    background-color: transparent;
+    border-color: #DEDEDE;
+    cursor: default;
+}
+
+.Zebra_Pagination li.disabled a:hover {
+    color: #DEDEDE;
+    background-color: transparent;
+    border-color: #DEDEDE;
+}
+
+body {
+    text-align: center;
+    padding: 10px;
+    font-family: Tahoma;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+table.movimientos {
+    width: 1000px;
+    border: 1px solid #AAA;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.movimientos th {
+    background: #222;
+    color: #FFF;
+    font-weight: bold;
+}
+
+table.movimientos td, table.movimientos th {
+    padding: 4px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table.movimientos tr.even {
+    background: #EFEFEF;
+}
+
+div {
+    display: block;
+}
