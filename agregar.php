@@ -9,12 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <title>Nuevo movimiento</title>
   <style>
-    /*  div {
-      background-color: blue;
-      color: white;
-      font-size: 50px;
-      margin: 20px;
-    } */
+
   </style>
 </head>
 
@@ -31,35 +26,36 @@
 
   <div class="container">
     <h1>AGREGAR NUEVO MOVIMIENTO</h1>
-
-    <div class="row">
-      <form action="insertar.php" method="post">
-        <label>Fecha: </label> <input type="date" name="fecham" id="fecham"><br>
-        <label>Usuario: </label>
-        <select id="nombrem" name="nombrem" class="form-select" aria-label="Default select example">
-          <?php while ($row = mysqli_fetch_assoc($resultado)) { ?>
-            <option value="<?php echo $row["id_familia"] . $row["nombre"]; ?>">
-              <?php echo $row["id_familia"] . '-' . $row["nombre"]; ?>
-            </option>
-          <?php } ?>
-        </select><br>
-        <label>Tipo: </label>
-        <select id="tipom" name="tipom" class="form-select" aria-label="Default select example">
-          <option value="egreso">egreso</option>
-          <option value="ingreso">ingreso</option>
-        </select>
-        <label>Descripción:</label><input type="text" name="descripcionm" id="descripcionm" class="form-control" id="formGroupExampleInput" placeholder="Descripción del movimiento"><br>
-        <label>Monto: </label> <input type="float" name="montom" id="montom" class="form-control" id="formGroupExampleInput" placeholder="$125.056,20"><br>
-        <label>Forma: </label>
-        <select id="formam" name="formam" class="form-select" aria-label="Default select example">
-          <option value="transferencia bancaria">transferencia bancaria</option>
-          <option value="tarjeta de crédito">tarejta de crédito</option>
-          <option value="efectivo">efectivo</option>
-        </select><br>
-        <button type="submit" class="btn btn-primary">Agregar</button>
-      </form>
+    <div class="row justify-content-start">
+      <div class="col-6">
+        <form action="insertar.php" method="post">
+          <label>Fecha: </label><br>
+          <input type="date" name="fecham" id="fecham"><br>
+          <label>Usuario: </label>
+          <select id="nombrem" name="nombrem" class="form-select" aria-label="Default select example">
+            <?php while ($row = mysqli_fetch_assoc($resultado)) { ?>
+              <option value="<?php echo $row["id_familia"] . $row["nombre"]; ?>">
+                <?php echo $row["id_familia"] . '-' . $row["nombre"]; ?>
+              </option>
+            <?php } ?>
+          </select>
+          <label>Tipo: </label>
+          <select id="tipom" name="tipom" class="form-select" aria-label="Default select example">
+            <option value="egreso">egreso</option>
+            <option value="ingreso">ingreso</option>
+          </select>
+          <label>Descripción:</label><input type="text" name="descripcionm" id="descripcionm" class="form-control" id="formGroupExampleInput" placeholder="Descripción del movimiento">
+          <label>Monto: </label> <input type="float" name="montom" id="montom" class="form-control" id="formGroupExampleInput" placeholder="Por ejemplo 125056,20">
+          <label>Forma: </label>
+          <select id="formam" name="formam" class="form-select" aria-label="Default select example">
+            <option value="transferencia bancaria">transferencia bancaria</option>
+            <option value="tarjeta de crédito">tarejta de crédito</option>
+            <option value="efectivo">efectivo</option>
+          </select><br>
+          <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+      </div>
     </div>
-
   </div>
 
 </body>
