@@ -44,7 +44,7 @@
             <option value="egreso">egreso</option>
             <option value="ingreso">ingreso</option>
           </select>
-          <label>Descripción:</label><input type="text" name="descripcionm" id="descripcionm" class="form-control" id="formGroupExampleInput" placeholder="Descripción del movimiento">
+          <label>Descripción:</label><input type="text" name="descripcionm" id="descripcionm" class="form-control" placeholder="Descripción del movimiento">
           <label>Monto: </label> <input type="float" name="montom" id="montom" class="form-control" id="formGroupExampleInput" placeholder="Por ejemplo 125056,20">
           <label>Forma: </label>
           <select id="formam" name="formam" class="form-select" aria-label="Default select example">
