@@ -6,4 +6,4 @@ Para ejecutarlo se debe :
 2) clonar este repositorio dentro de  C:\xampp\htdocs\sistema_familiar
 3) crear la base de datos db_movimientos e importar el archivo del mismo nombre
 4) ejecutar index.php
-![image](https://github.com/JONYCAGE2022/Sistema_familiar/assets/112737912/36fa4e27-d452-4e5f-a928-7ca27e5d18ef)
+![image](https://github.com/JONYCAGE2022/Sistema_familiar/assets/112737912/9837eb69-1634-49f1-9401-04201e4a667e)
